@@ -1,0 +1,8 @@
+WH FG ถุง - กิจกรรมตอบคำถาม 5ส (15 ข้อ)
+
+1. ใน Supabase > SQL Editor เปิดไฟล์ FIX_PERMISSIONS.sql คัดลอกทั้งหมดแล้ว Run เพียงครั้งเดียว (แก้ permission denied รวม employees)
+2. ใน Netlify > Environment variables ตรวจว่า SUPABASE_URL = https://ybircwafwbwwlayxnzne.supabase.co และ SUPABASE_SERVICE_ROLE_KEY เป็น service_role secret (ไม่ใช่ anon) และ ADMIN_PASSWORD ตั้งไว้
+3. Netlify > Deploys > อัปโหลด ZIP นี้ทับไซต์เดิม (อย่าสร้างไซต์ใหม่)
+4. เปิดเว็บไซต์และ Ctrl+Shift+R
+
+ข้อควรทราบ: ไฟล์ ZIP ไม่สามารถแก้สิทธิ์ฐานข้อมูลที่ Supabase โดยอัตโนมัติได้ จำเป็นต้อง Run SQL ข้อ 1 หนึ่งครั้ง
